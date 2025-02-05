@@ -17,6 +17,11 @@ function cidadeBrasil() {// Ao clicar em Prompt exibe o prompt perguntando
     }
 }
 
-function soma() {
-    
+function soma() { // A função usa prompt() para solicitar dois números ao usuário
+    // parseInt() para garantir que os valores sejam convertidos para números inteiros
+    let num1 = parseInt(prompt("Digite o primeiro número inteiro:")); 
+    let num2 = parseInt(prompt("Digite o segundo número inteiro:"));
+
+    let soma = num1 + num2;
+    alert(`A soma de ${num1} + ${num2} é ${soma}.`);
 }
