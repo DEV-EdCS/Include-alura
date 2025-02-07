@@ -1,24 +1,49 @@
-// Criar uma função que exibe "Olá, mundo!" no console.
-let olaMundo = exibirHelloWord();
-
-function exibirHelloWord(){
-   return console.log('Olá, Mundo!');
+// 1. Criar uma função que exibe "Olá, mundo!" no console.
+function olaMundo(){
+  console.log('Olá, Mundo!');
 }
 
-// Criar uma função que recebe um nome como parâmetro e exibe "Olá, [nome]!" no console.
-let nome = ('Mundo');
+olaMundo();
 
-function receberNome(nome) {
-   return console.log(`Olá ${nome}!`);
+// 2. Criar uma função que recebe um nome como parâmetro e exibe "Olá, [nome]!" no console.
+function exibirOlaNome(nome) {
+   console.log(`Olá, ${nome}!`);
 }
 
-console.log(receberNome());
+exibirOlaNome('Edlan');
 
-// Criar uma função que recebe um número como parâmetro e retorna o dobro desse número.
+// 3. Criar uma função que recebe um número como parâmetro e retorna o dobro desse número.
+function dobrarNumero(numero) {
+   console.log (numero * 2);
+}
+
+dobrarNumero(3);
+dobrarNumero(6);
+
+// let resultadoDobro = dobrarNumero(7);
+// console.log(resultadoDobro);
 
 
-// Criar uma função que recebe três números como parâmetros e retorna a média deles.
+// 4. Criar uma função que recebe três números como parâmetros e retorna a média deles.
+function tirarMedia(num1, num2, num3) {
+   return (num1 + num2 + num3) / 3;
+}
 
-// Criar uma função que recebe dois números como parâmetros e retorna o maior deles.
+let media = tirarMedia(7.5, 8.8, 9.2);
+console.log(media);
 
-// Criar uma função que recebe um número como parâmetro e retorna o resultado da multiplicação desse número por ele mesmo
+// 5. Criar uma função que recebe dois números como parâmetros e retorna o maior deles.
+function verificarMaiorNumero(numA,numB) {
+   return numA > numB ? numA : numB; // Operador condicional (ternário). Se condicao for verdadeira, o operador terá o valor de numA. Caso contrário, terá o valor de numB.
+}
+
+let maiorNumero = verificarMaiorNumero(14, 10);
+console.log(maiorNumero);
+
+// 6. Criar uma função que recebe um número como parâmetro e retorna o resultado da multiplicação desse número por ele mesmo
+function multiplicarNumero(valor) {
+   return valor * valor;
+}
+
+let resultadoMuliticacao = multiplicarNumero(7);
+console.log(resultadoMuliticacao);
